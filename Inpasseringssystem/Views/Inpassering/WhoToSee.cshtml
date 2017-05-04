@@ -1,4 +1,5 @@
-﻿
+﻿@model Inpasseringssystem.Models.Guest
+
 @{
     Layout = null;
 }
@@ -54,12 +55,27 @@
             height: 80px;
             width: 80px;
         }
+
+        #searchclear {
+            position: absolute;
+            right: 25px;
+            top: 0;
+            bottom: 0;
+            height: 148px;
+            margin: auto;
+            font-size: 14px;
+            cursor: pointer;
+            color: #ccc;
+        }
     </style>
 
     <script>
 
 
+
         $(function () {
+
+
             var projects = [
                 {
                     label: "Christina Silén",
@@ -121,40 +137,48 @@
         });
 
 
-
     </script>
 </head>
 <body>
 
+    @using (Html.BeginForm("Complete", "Inpassering"))
+    {
+        <div class="container">
+            <div class="row" style="height:292px; text-align: left">
+                <div class="col-md-4"></div>
+                <div class="col-md-8"><font size="38"><br /><br />Välkommen @ViewBag.Name, <br />vem är det du ska träffa?</font></div>
 
-    <div class="container">
-        <div class="row" style="height:292px; text-align: left">
-            <div class="col-md-4"></div>
-            <div class="col-md-8"><font size="38"><br /><br />Välkommen @ViewBag.Name, <br />vem är det du ska träffa?</font></div>
+            </div>
 
-        </div>
+            <div class="row">
+                <div class="col-md-4"><img id="project-emp" src="~/pictures/emp/silhouette-woman2.jpg" class="ui-state-default" alt=""></div>
+                <div class="col-md-4 text-center" style="text-align: center">
+                    <br />
 
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 text-center" style="text-align: center">
-                <br />
-
-                <div class="col-md-12 text-left">
-                    <div class="ui-widget">
-                        <h1>Namn</h1>
-                        <input type="text" style="font-size: 27px" class="form-control input-lg" id="tags" />
-                        <br />
-                        <br />
-                        <br />
-                        <a class="btn btn-block btn-success btn-xlarge" href="InpasseringVemTräffa.html">OK</a>
-
+                    <div class="col-md-12 text-left">
+                        <div class="ui-widget">
+                            <h1>Namn</h1>
+                            @*<input type="text" style="font-size: 27px" class="form-control input-lg" id="tags" />*@
+                            @Html.TextBoxFor(model => model.Visiting, new { @class = "form-control input-lg", @style = "font-size: 27px", @id = "tags" })
+                            <span id="searchclear" class="glyphicon glyphicon-remove-circle" style="font-size:30px"></span>
+                            <br />
+                            <div class="checkbox">
+                                <label><input type="checkbox" style="width: 30px; height: 30px; margin-top: 5px;" value=""><font style="font-size: 30px; outline-color:darkgrey; outline-style:dotted; margin-left:20px; padding:0px 7px">Annat ärende</font></label>
+                            </div>
+                            <br />
+                            <br />
+                            <input type="submit" class="btn btn-block btn-success btn-xlarge" style="font-size: 24px;" value="OK">
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-4">
+
+                </div>
             </div>
-            <div class="col-md-4"><img id="project-emp" src="~/pictures/emp/silhouette-woman2.jpg" class="ui-state-default" alt=""></div>
+
+
         </div>
 
-    </div>
+    }
 </body>
 </html>
-

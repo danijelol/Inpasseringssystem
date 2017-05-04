@@ -15,15 +15,5 @@ namespace Inpasseringssystem.Controllers
             return View();
         }
 
-        public ActionResult Register()
-        {
-            return View();
-        }
-
-        public ActionResult WhoToSee(guest model)
-        {
-            ViewBag.Name = model.Name;
-            return View(); 
-        }
     }
 }

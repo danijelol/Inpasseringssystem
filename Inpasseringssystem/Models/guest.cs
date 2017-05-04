@@ -5,10 +5,11 @@ using System.Web;
 
 namespace Inpasseringssystem.Models
 {
-    public class guest
+    public class Guest
     {
 
         public string Name { get; set; }
         public string Surname { get; set; }
+        public string Visiting { get; set; }
     }
 }

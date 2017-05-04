@@ -1,0 +1,48 @@
+﻿@model Inpasseringssystem.Models.Guest
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/större.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+
+    <div class="container">
+        <div class="row" style="height:292px; text-align: center"><font size="38" class="bg-success"><br /><br />Närvaro registrerad!</font></div>
+
+
+        @using (Html.BeginForm("Index", "Index"))
+        {
+
+
+            <div class="row">
+                <div class="col-md-12 text-center" style="text-align: center;"><h1>@ViewBag.Visiting har blivit meddelad om din ankomst. </h1>
+                <br /><h2>Sätt dig i soffan och ta det lugnt så möter vi dig alldeles strax.</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center" style="text-align: center">
+                    <br /><br /><br />
+                    <div class="col-md-12 text-left">
+                        <input type="submit" class="btn btn-block btn-danger btn-xlarge" value="Avsluta">
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+
+        }
+
+
+    </div>
+</body>
+</html>
