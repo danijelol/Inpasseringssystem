@@ -7,18 +7,13 @@ using System.Web.Mvc;
 
 namespace Inpasseringssystem.Controllers
 {
-    public class InpasseringController : Controller
+    public class indexController : Controller
     {
-        // GET: Inpassering
+        // GET: index
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult WhoToSee(guest model)
-        {
-            ViewBag.Name = model.Name;
-            return View();
-        }
     }
 }
