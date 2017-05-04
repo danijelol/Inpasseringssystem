@@ -23,7 +23,7 @@ namespace Inpasseringssystem.Controllers
         public ActionResult WhoToSee(guest model)
         {
             ViewBag.Name = model.Name;
-            return View();
+            return View(); 
         }
     }
 }

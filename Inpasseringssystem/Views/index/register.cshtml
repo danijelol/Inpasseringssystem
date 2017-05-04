@@ -1,0 +1,60 @@
+﻿@model Inpasseringssystem.Models.guest
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/större.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+
+    <div class="container">
+        <div class="row" style="height:292px; text-align: center"><font size="38"><br /><br />Hej! Vad heter du?</font></div>
+
+
+        @using (Html.BeginForm("WhoToSee", "index"))
+        {
+
+
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center" style="text-align: center">
+                    <br />
+                     
+                    <div class="col-md-12 text-left">
+                        <h1>Förnamn</h1>
+                        @Html.TextBoxFor(model => model.Name, new { @class = "form-control input-lg", @style = "font-size: 27px" })
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center" style="text-align: center">
+                    <br />
+                    <div class="col-md-12 text-left">
+                        <h1>Efternamn</h1>
+                        <input type="text" class="form-control input-lg" style="font-size: 27px" id="enamn" />
+                        <br />
+                        <br />
+                        <br />
+                        <input type="submit" class="btn btn-block btn-success btn-xlarge" value="OK">
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+
+        }
+
+
+    </div>
+</body>
+</html>
