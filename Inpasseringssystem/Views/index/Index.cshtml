@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+
+    <title></title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/större.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+
+    <!--<img style="width:100%" src="pictures/sogeti_varmred.gif" />-->
+    <img style="width:100%" src="~/pictures/sogetibaner.jpg" />
+
+    @using(Html.BeginForm("", "index"))
+    {
+
+    }
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <br />
+                <font size="38">Registrera ditt besök här:</font><br /><br /><br />
+            </div>
+        </div>
+
+
+        <div class="row" style="padding-bottom:15px">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <a class="btn btn-block btn-success btn-xlarge glyphicon glyphicon-play" href="register"> Inpassering</a>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <div class="row" style="padding-bottom:50px">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+
+
+                <a class="btn btn-block btn-warning btn-xlarge glyphicon glyphicon-stop" href=""> Utpassering</a>
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <img style="width:100%" src="~/pictures/pile-of-books.jpg" />
+
+</body>
+
+</html>
+
