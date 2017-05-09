@@ -12,6 +12,7 @@
     <title></title>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/större.css" rel="stylesheet" />
+
 </head>
 <body>
     <script src="~/Scripts/bootstrap.js"></script>
@@ -29,31 +30,31 @@
             </div>
         </div>
 
-@using (Html.BeginForm("Index", "Inpassering"))
-{
-        <div class="row" style="padding-bottom:15px">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
+        @using (Html.BeginForm("Index", "Inpassering"))
+        {
+            <div class="row" style="padding-bottom:15px">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
 
-                <button type="submit" class="btn btn-block btn-success btn-xlarge glyphicon glyphicon-play"> Inpassering</button>
+                    <button type="submit" class="btn btn-block btn-success btn-xlarge glyphicon glyphicon-play"> Inpassering</button>
 
+                </div>
+                <div class="col-md-4"></div>
             </div>
-            <div class="col-md-4"></div>
-        </div>
-}
+        }
 
-@using (Html.BeginForm("Index", "Utpassering"))
-{
-        <div class="row" style="padding-bottom:50px">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
+        @using (Html.BeginForm("Index", "Utpassering"))
+        {
+            <div class="row" style="padding-bottom:50px">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
 
-                <button type="submit" class="btn btn-block btn-warning btn-xlarge glyphicon glyphicon-stop"> Utpassering</button>
+                    <button type="submit" class="btn btn-block btn-warning btn-xlarge glyphicon glyphicon-stop"> Utpassering</button>
 
+                </div>
+                <div class="col-md-4"></div>
             </div>
-            <div class="col-md-4"></div>
-        </div>
-}
+        }
 
 
 
@@ -68,4 +69,3 @@
 </body>
 
 </html>
-
