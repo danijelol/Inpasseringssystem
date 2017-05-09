@@ -21,7 +21,7 @@ namespace Inpasseringssystem.Controllers
             return View();
         }
 
-        public ActionResult Complete(Guest model)
+        public ActionResult Complete(Guest model, string meddelande)
         {
             ViewBag.Visiting = model.Visiting;
             return View();

@@ -138,8 +138,11 @@
 
 
     </script>
+
 </head>
 <body>
+
+
 
     @using (Html.BeginForm("Complete", "Inpassering"))
     {
@@ -163,10 +166,13 @@
                             <span id="searchclear" class="glyphicon glyphicon-remove-circle" style="font-size:30px"></span>
                             <br />
                             <div class="checkbox">
-                                <label><input type="checkbox" style="width: 30px; height: 30px; margin-top: 5px;" value=""><font style="font-size: 30px; outline-color:darkgrey; outline-style:dotted; margin-left:20px; padding:0px 7px">Annat ärende</font></label>
+                                <label><input type="checkbox" style="width: 30px; height: 30px; margin-top: 5px;" value=""; id="knapp"><font style="font-size: 30px; outline-color:darkgrey; outline-style:dotted; margin-left:20px; padding:0px 7px">Annat ärende</font></label>
                             </div>
                             <br />
                             <br />
+
+
+
                             <input type="submit" class="btn btn-block btn-success btn-xlarge" style="font-size: 24px;" value="OK">
                         </div>
                     </div>
