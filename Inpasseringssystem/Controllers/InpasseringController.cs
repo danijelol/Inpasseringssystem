@@ -17,7 +17,13 @@ namespace Inpasseringssystem.Controllers
 
         public ActionResult WhoToSee(Guest model)
         {
-            if (model.Name == null)
+            if (model.Name == null && model.Surname == null)
+            {
+                ViewBag.ErrorName = "Du måste ange ditt förnamn";
+                ViewBag.ErrorSurname = "Du måste ange ditt efternamn";
+                return View("Index");
+            }
+            else if (model.Name == null)
             {
                 ViewBag.ErrorName = "Du måste ange ditt förnamn";
                 return View("Index");
