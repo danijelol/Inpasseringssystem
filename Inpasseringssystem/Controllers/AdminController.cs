@@ -17,11 +17,11 @@ namespace Inpasseringssystem.Controllers
 
         public ActionResult AdminStart(Guest model)
         {
-            if (model.Password != "password")
-            {
-                ViewBag.Error = "Felaktigt lösenord!";
-                return View("Index");
-            }
+            //if (model.Password != "password")
+            //{
+            //    ViewBag.Error = "Felaktigt lösenord!";
+            //    return View("Index");
+            //}
             return View();
         }
     }
