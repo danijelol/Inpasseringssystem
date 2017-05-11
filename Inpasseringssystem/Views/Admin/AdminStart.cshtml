@@ -23,15 +23,24 @@
         $(function () {
             $("#datepickerFrom").datepicker({
                 changeMonth: true,
-                changeYear: true
+                changeYear: true,
+                dateFormat: 'yy-mm-dd'
             });
 
             $("#datepickerTo").datepicker({
                 changeMonth: true,
-                changeYear: true
+                changeYear: true,
+                dateFormat: 'yy-mm-dd'
             });
         });
     </script>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
 
 </head>
 <body>
@@ -39,45 +48,92 @@
 
 
     <div class="container">
-        <div class="row" style="height:292px; text-align: center"><font size="38"><br /><br />Besökslogg</font></div>
+        <div class="row" style="height:150px; text-align: center"><font size="38"><br />Besökslogg</font></div>
 
 
-        @using (Html.BeginForm("WhoToSee", "Inpassering"))
+        @using (Html.BeginForm("Index", "Admin"))
         {
 
 
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4 text-center" style="text-align: center">
-                    <h1>Ange datum</h1>
-
-                    <div class="col-md-12 text-left">
+                    <div class="col-md-6 text-left">
                         <h1>Från</h1>
                         <p><input type="text" id="datepickerFrom" class="form-control input-lg"></p>
                         <br />
-                        <div class="bg-danger" style="font-size:24px">@ViewBag.ErrorName</div>
                     </div>
-                    <div class="col-md-12 text-left">
+                    <div class="col-md-6 text-left">
                         <h1>Till</h1>
                         <p><input type="text" id="datepickerTo" class="form-control input-lg"></p>
                         <br />
-                        <div class="bg-danger" style="font-size:24px">@ViewBag.ErrorName</div>
                     </div>
                 </div>
                 <div class="col-md-4"></div>
             </div>
             <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4 text-center" style="text-align: center">
+                <div class="col-md-12">
+                    <table style="width:100%">
+                        <tr>
+                            <th>Förnamn</th>
+                            <th>Efternamn</th>
+                            <th>Besökt</th>
+                            <th>In</th>
+                            <th>Ut</th>
+                        </tr>
+                        <tr>
+                            <td>Per</td>
+                            <td>Andersson</td>
+                            <td>Kristina Löfbom Englund</td>
+                            <td>2017-05-10 08:55</td>
+                            <td>2017-05-10 09:12</td>
+                        </tr>
+                        <tr>
+                            <td>Johanna</td>
+                            <td>Nilsson</td>
+                            <td>Fredrik Hallberg</td>
+                            <td>2017-05-10 10:45</td>
+                            <td>2017-05-10 12:24</td>
+                        </tr>
+                        <tr>
+                            <td>Erika</td>
+                            <td>Svensson</td>
+                            <td>Kristina Löfbom Englund</td>
+                            <td>2017-05-11 11:57</td>
+                            <td>2017-05-11 14:02</td>
+                        </tr>
+                        <tr>
+                            <td>Oskar</td>
+                            <td>Karlsson</td>
+                            <td>Judith Karlsson</td>
+                            <td>2017-05-11 09:05</td>
+                            <td>2017-05-11 10:01</td>
+                        </tr>
+                    </table>
                     <br />
-                    <div class="col-md-12 text-left">
+                    <div class="col-md-9"></div>
+                    <div class="col-md-3">
+                        <input type="submit" class="btn btn-block btn-success btn-lg" value="Skriv ut">
+                        <br />
+                        <input type="submit" class="btn btn-block btn-info btn-lg" value="Spara till fil">
 
-                        <br />
-                        <div class="bg-danger" style="font-size:24px">@ViewBag.ErrorSurname</div>
-                        <br />
-                        <br />
-                        <input type="submit" class="btn btn-block btn-success btn-xlarge" style="font-size: 24px;" value="OK">
                     </div>
+
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <input type="submit" class="btn btn-block btn-danger btn-lg" value="Avsluta">
                 </div>
                 <div class="col-md-4"></div>
             </div>

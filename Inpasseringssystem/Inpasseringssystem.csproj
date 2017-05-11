@@ -148,6 +148,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="pictures\banner.jpg" />
     <Content Include="pictures\emp\Henrik Larsson_Color.jpg" />
     <Content Include="pictures\emp\Johan H_Color.jpg" />
     <Content Include="pictures\emp\JohanWallin_Color.jpg" />
@@ -158,6 +159,7 @@
     <Content Include="pictures\emp\thomas.jpg" />
     <Content Include="pictures\emp\Tim_Color.jpg" />
     <Content Include="pictures\emp\Önder_Color.jpg" />
+    <Content Include="pictures\footer.png" />
     <Content Include="pictures\kuba-icon-ok-800px.png" />
     <Content Include="pictures\pile-of-books.jpg" />
     <Content Include="pictures\sogetibaner.jpg" />

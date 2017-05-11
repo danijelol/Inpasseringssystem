@@ -7,3 +7,16 @@
     border-radius: 8px;
     white-space: normal;
 }
+
+.btn-start {
+    padding: 18px 28px;
+    height: 250px;
+    width: 350px;
+    font-size: 60px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    white-space: normal;
+}
+
