@@ -148,7 +148,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
-    <Content Include="pictures\banner.jpg" />
+    <Content Include="pictures\banner.png" />
     <Content Include="pictures\emp\Henrik Larsson_Color.jpg" />
     <Content Include="pictures\emp\Johan H_Color.jpg" />
     <Content Include="pictures\emp\JohanWallin_Color.jpg" />
