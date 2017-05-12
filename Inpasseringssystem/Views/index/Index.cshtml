@@ -19,57 +19,59 @@
     <script src="~/Scripts/jquery-3.1.1.js"></script>
 
     <!--<img style="width:100%" src="pictures/sogeti_varmred.gif" />-->
-    
+
     <img style="width:100%" src="~/pictures/banner.png" />
 
     <div class="container">
         <div class="row">
-
+            <br />
 
         </div>
 
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <br /><br /><br />
-                    <font style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 60px">Välkommen att registrera ditt besök här:</font><br /><br /><br /><br />
-                </div>
+        <div class="row">
+            <div class="col-md-12 text-center" style="border:1px solid black;">
+                <br /><br /><br />
+                <font style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 60px">Välkommen att registrera ditt besök här!</font><br /><br /><br /><br />
             </div>
-        <br /><br /><br />
-            @using (Html.BeginForm("Index", "Inpassering"))
-            {
-                <div class="row" style="padding-bottom:15px">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-4">
-
-                        <button type="submit" class="btn btn-block btn-success btn-start glyphicon glyphicon-play"> Inpassering</button>
-
-                    </div>
-                    <div class="col-md-4">
-                        <button type="submit" class="btn btn-block btn-warning btn-start glyphicon glyphicon-stop"> Utpassering</button>
-                    </div>
-                    <div class="col-md-2"></div>
-                </div>
-            }
-
-            @using (Html.BeginForm("Index", "Utpassering"))
-            {
-                <div class="row" style="padding-bottom:50px">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-
-
-
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
-            }
-
-
-
-
-
         </div>
-    <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br />
+
+        <div class="row" style="padding-bottom:15px">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                @using (Html.BeginForm("Index", "Inpassering"))
+                {
+                    <button type="submit" class="btn btn-block btn-success btn-start glyphicon glyphicon-play"> Inpassering</button>
+                }
+            </div>
+            <div class="col-md-4">
+                @using (Html.BeginForm("Index", "Utpassering"))
+                {
+                    <button type="submit" class="btn btn-block btn-warning btn-start glyphicon glyphicon-stop"> Utpassering</button>
+                }
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+
+
+        <div class="row" style="padding-bottom:50px">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+
+
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+
+
+
+
+
+    </div>
+    <br /><br /><br /><br /><br /><br /><br />
 
     <img style="width:100%" src="~/pictures/footer.png" />
 
