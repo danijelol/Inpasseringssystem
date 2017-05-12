@@ -16,6 +16,11 @@
 <body>
     <script src="~/Scripts/bootstrap.js"></script>
     <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 
     <div class="container">
         <div class="row" style="height:292px; text-align: center"><font size="38"><br /><br />Hej! Vad heter du?</font></div>
@@ -60,5 +65,9 @@
 
 
     </div>
+
+    <button class="btn btn-block btn-lg btn-default" onclick="goBack()" style="width:180px; height:50px; position: absolute;left:10px;bottom:10px;">
+        <span class=" glyphicon glyphicon-backward pull-left "></span>Tillbaka
+    </button>
 </body>
 </html>

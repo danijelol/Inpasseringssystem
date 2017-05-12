@@ -16,46 +16,56 @@
 <body>
     <script src="~/Scripts/bootstrap.js"></script>
     <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 
     <div class="container">
-        <div class="row" style="height:292px; text-align: center"><font size="38"><br /><br />Hej! Vad var det du hette nu igen?</font></div>
+        <div class="row" style="height:292px; text-align: center"><font size="38"><br /><br />Hej! <br />För utpassering ange ditt namn.</font></div>
 
 
-        @using (Html.BeginForm("Complete", "Utpassering"))
-        {
 
 
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4 text-center" style="text-align: center">
-                    <br />
 
-                    <div class="col-md-12 text-left">
-                        <h1>Förnamn</h1>
-                        @Html.TextBoxFor(model => model.Name, new { @class = "form-control input-lg", @style = "font-size: 27px" })
-                    </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center" style="text-align: center">
+                <br />
+
+                <div class="col-md-12 text-left">
+                    <h1>Förnamn</h1>
+                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control input-lg", @style = "font-size: 27px" })
                 </div>
-                <div class="col-md-4"></div>
             </div>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4 text-center" style="text-align: center">
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center" style="text-align: center">
+                <br />
+                <div class="col-md-12 text-left">
+                    <h1>Efternamn</h1>
+                    <input type="text" class="form-control input-lg" style="font-size: 27px" id="enamn" />
                     <br />
-                    <div class="col-md-12 text-left">
-                        <h1>Efternamn</h1>
-                        <input type="text" class="form-control input-lg" style="font-size: 27px" id="enamn" />
-                        <br />
-                        <br />
-                        <br />
+                    <br />
+                    <br />
+                    @using (Html.BeginForm("Complete", "Utpassering"))
+                    {
                         <input type="submit" class="btn btn-block btn-success btn-xlarge" style="font-size: 24px;" value="OK">
+                    }
+                    <div class="col-md-4">
                     </div>
                 </div>
-                <div class="col-md-4"></div>
             </div>
-
-        }
-
-
+            <div class="col-md-4"></div>
+        </div>
     </div>
+
+    <button class="btn btn-block btn-lg btn-default" onclick="goBack()" style="width:180px; height:50px; position: absolute;left:10px;bottom:10px;">
+        <span class=" glyphicon glyphicon-backward pull-left "></span>Tillbaka
+    </button>
+
 </body>
 </html>

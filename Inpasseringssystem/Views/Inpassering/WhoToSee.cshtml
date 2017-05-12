@@ -134,9 +134,13 @@
                         .append("<div>" + item.label + "</div>")
                         .appendTo(ul);
                 }
+
+
         });
 
-
+        function goBack() {
+            window.history.back();
+        }
     </script>
 
 </head>
@@ -144,20 +148,20 @@
 
 
 
-    @using (Html.BeginForm("Complete", "Inpassering"))
-    {
-        <div class="container">
-            <div class="row" style="height:292px; text-align: left">
-                <div class="col-md-4"></div>
-                <div class="col-md-8"><font size="38"><br /><br />Välkommen @ViewBag.Name! <br />Vem ska du träffa?</font></div>
 
-            </div>
+    <div class="container">
+        <div class="row" style="height:292px; text-align: left">
+            <div class="col-md-4"></div>
+            <div class="col-md-8"><font size="38"><br /><br />Välkommen @ViewBag.Name! <br />Vem ska du träffa?</font></div>
 
-            <div class="row">
-                <div class="col-md-4"><img id="project-emp" src="~/pictures/emp/silhouette-woman2.jpg" class="ui-state-default" alt=""></div>
-                <div class="col-md-4 text-center" style="text-align: center">
-                    <br />
+        </div>
 
+        <div class="row">
+            <div class="col-md-4"><img id="project-emp" src="~/pictures/emp/silhouette-woman2.jpg" class="ui-state-default" alt=""></div>
+            <div class="col-md-4 text-center" style="text-align: center">
+                <br />
+                @using (Html.BeginForm("Complete", "Inpassering"))
+                {
                     <div class="col-md-12 text-left">
                         <div class="ui-widget">
                             <h1>Namn</h1>
@@ -166,25 +170,32 @@
                             <span id="searchclear" class="glyphicon glyphicon-remove-circle" style="font-size:30px"></span>
                             <br />
                             <div class="checkbox">
-                                <label><input type="checkbox" style="width: 30px; height: 30px; margin-top: 5px;" value=""; id="knapp"><font style="font-size: 30px; outline-color:darkgrey; outline-style:dotted; margin-left:20px; padding:0px 7px">Annat ärende</font></label>
+                                <label><input type="checkbox" style="width: 30px; height: 30px; margin-top: 5px;" value="" ; id="knapp"><font style="font-size: 30px; outline-color:darkgrey; outline-style:dotted; margin-left:20px; padding:0px 7px">Annat ärende</font></label>
                             </div>
-                            <br />
-                            <br />
+                        </div>
+                        <br />
+                        <br />
 
+                        <input type="submit" class="btn btn-block btn-success btn-xlarge" style="font-size: 24px;" value="OK">
+                        
+                        <div class="col-md-4">
 
-
-                            <input type="submit" class="btn btn-block btn-success btn-xlarge" style="font-size: 24px;" value="OK">
                         </div>
                     </div>
+                }
                 </div>
                 <div class="col-md-4">
 
                 </div>
+
+                
             </div>
 
-
+                
         </div>
+        <button class="btn btn-block btn-lg btn-default" onclick="goBack()" style="width:180px; height:50px; position: absolute;left:10px;bottom:10px;">
+            <span class=" glyphicon glyphicon-backward pull-left "></span>Tillbaka
+        </button>
 
-    }
-</body>
+    </body>
 </html>
