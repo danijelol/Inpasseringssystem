@@ -28,8 +28,10 @@
 
 
 
-
+@using (Html.BeginForm("Complete", "Utpassering"))
+{
         <div class="row">
+
             <div class="col-md-4"></div>
             <div class="col-md-4 text-center" style="text-align: center">
                 <br />
@@ -51,16 +53,15 @@
                     <br />
                     <br />
                     <br />
-                    @using (Html.BeginForm("Complete", "Utpassering"))
-                    {
                         <input type="submit" class="btn btn-block btn-success btn-xlarge" style="font-size: 24px;" value="OK">
-                    }
+                    
                     <div class="col-md-4">
                     </div>
                 </div>
             </div>
             <div class="col-md-4"></div>
         </div>
+}
     </div>
 
     <button class="btn btn-block btn-lg btn-default" onclick="goBack()" style="width:180px; height:50px; position: absolute;left:10px;bottom:10px;">
