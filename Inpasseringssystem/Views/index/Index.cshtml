@@ -38,20 +38,20 @@
         <br /><br /><br />
 
         <div class="row" style="padding-bottom:15px">
-            <div class="col-md-2"></div>
-            <div class="col-md-4" style="margin-right: 20px;">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
                 @using (Html.BeginForm("Index", "Inpassering"))
                 {
                     <button type="submit" class="btn btn-block btn-success btn-start glyphicon glyphicon-play"> Inpassering</button>
                 }
             </div>
-            <div class="col-md-4" style="margin-left: 20px;">
+            <div class="col-md-5">
                 @using (Html.BeginForm("Index", "Utpassering"))
                 {
                     <button type="submit" class="btn btn-block btn-warning btn-start glyphicon glyphicon-stop"> Utpassering</button>
                 }
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-1"></div>
         </div>
 
 

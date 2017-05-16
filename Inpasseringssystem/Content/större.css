@@ -9,9 +9,11 @@
 }
 
 .btn-start {
-    padding: 18px 28px;
+    padding: 0px 0px;
     height: 250px;
-    width: 350px;
+    width: 390px;
+    margin: 0px auto;
+    margin-bottom: 20px;
     font-size: 60px;
     line-height: normal;
     -webkit-border-radius: 8px;
