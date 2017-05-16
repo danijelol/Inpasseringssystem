@@ -150,11 +150,14 @@
 
 
     <div class="container">
-        <div class="row" style="height:292px; text-align: left">
-            <div class="col-md-4"></div>
-            <div class="col-md-8"><font size="38"><br /><br />Välkommen @ViewBag.Name! <br />Vem ska du träffa?</font></div>
-
+        <div class="row" style="height:292px;">
+            <div class="col-md-12" style="text-align: center;margin-top:150px;">
+                <div style="display: inline-block; text-align: left; margin: 0px auto">
+                    <font size="38">Välkommen @ViewBag.Name! <br />Vem ska du träffa?</font>
+                </div>
+            </div>
         </div>
+
 
         <div class="row">
             <div class="col-md-4"><img id="project-emp" src="~/pictures/emp/silhouette-woman2.jpg" class="ui-state-default" alt=""></div>
@@ -177,25 +180,25 @@
                         <br />
 
                         <input type="submit" class="btn btn-block btn-success btn-xlarge" style="font-size: 24px;" value="OK">
-                        
+
                         <div class="col-md-4">
 
                         </div>
                     </div>
                 }
-                </div>
-                <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
 
-                </div>
-
-                
             </div>
 
-                
-        </div>
-        <button class="btn btn-block btn-lg btn-default" onclick="goBack()" style="width:180px; height:50px; position: absolute;left:10px;bottom:10px;">
-            <span class=" glyphicon glyphicon-backward pull-left "></span>Tillbaka
-        </button>
 
-    </body>
+        </div>
+
+
+    </div>
+    <button class="btn btn-block btn-lg btn-default" onclick="goBack()" style="width:180px; height:50px; position: absolute;left:10px;bottom:10px;">
+        <span class=" glyphicon glyphicon-backward pull-left "></span>Tillbaka
+    </button>
+
+</body>
 </html>

@@ -18,9 +18,11 @@
     <script src="~/Scripts/jquery-3.1.1.js"></script>
 
     <div class="container">
-        <div class="row" style="height:292px; text-align: center"><font size="38" class="bg-success"><br /><br />Utpassering registerad!</font></div>
-
-
+        <div class="row" style="height:292px; text-align: center">
+            <div style="margin-top:150px;">
+                <font size="38" class="bg-success" style="padding: 10px 20px;">Utpassering registerad!</font>
+            </div>
+        </div>
 
         @using (Html.BeginForm("Index", "Index"))
         {
@@ -28,13 +30,13 @@
 
             <div class="row">
                 <div class="col-md-12 text-center" style="text-align: center;">
-                        <br /><h2>Tack @ViewBag.Name för ditt besök och välkommen åter!</h2>
+                    <br /><h2>Tack @ViewBag.Name för ditt besök och välkommen åter!</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4 text-center" style="text-align: center">
-                    <br /><br /><br />
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                     <div class="col-md-12 text-left">
                         <input type="submit" class="btn btn-block btn-danger btn-xlarge" value="Avsluta">
 

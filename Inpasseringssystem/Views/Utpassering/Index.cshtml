@@ -23,43 +23,47 @@
     </script>
 
     <div class="container">
-        <div class="row" style="height:292px; text-align: center; margin-top: 80px;"><font size="38"><br /><br />Hej! För utpassering ange ditt namn.</font></div>
-
-@using (Html.BeginForm("Complete", "Utpassering"))
-{
-        <div class="row">
-
-            <div class="col-md-4"></div>
-            <div class="col-md-4 text-center" style="text-align: center">
-                
-                <div class="col-md-12 text-left">
-                    <h1>Förnamn</h1>
-                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control input-lg", @style = "font-size: 27px" })
-                    <br />
-                    <div class="bg-danger" style="font-size:24px">@ViewBag.ErrorName</div>
-                </div>
+        <div class="row" style="height:292px; text-align: center;">
+            <div class="col-md-12" style="margin-top:150px">
+                <font size="38">Hej! För utpassering ange ditt namn.</font>
             </div>
-            <div class="col-md-4"></div>
         </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 text-center" style="text-align: center">
-                <div class="col-md-12 text-left">
-                    <h1>Efternamn</h1>
-                    @Html.TextBoxFor(model => model.Surname, new { @class = "form-control input-lg", @style = "font-size: 27px" })
-                    <br />
-                    <div class="bg-danger" style="font-size:24px">@ViewBag.ErrorSurname</div>
-                    <br />
-                    <br />
-                        <input type="submit" class="btn btn-block btn-success btn-xlarge" style="font-size: 24px;" value="OK">
-                    
-                    <div class="col-md-4">
+
+        @using (Html.BeginForm("Complete", "Utpassering"))
+        {
+            <div class="row">
+
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center" style="text-align: center">
+
+                    <div class="col-md-12 text-left">
+                        <h1>Förnamn</h1>
+                        @Html.TextBoxFor(model => model.Name, new { @class = "form-control input-lg", @style = "font-size: 27px" })
+                        <br />
+                        <div class="bg-danger" style="font-size:24px">@ViewBag.ErrorName</div>
                     </div>
                 </div>
+                <div class="col-md-4"></div>
             </div>
-            <div class="col-md-4"></div>
-        </div>
-}
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center" style="text-align: center">
+                    <div class="col-md-12 text-left">
+                        <h1>Efternamn</h1>
+                        @Html.TextBoxFor(model => model.Surname, new { @class = "form-control input-lg", @style = "font-size: 27px" })
+                        <br />
+                        <div class="bg-danger" style="font-size:24px">@ViewBag.ErrorSurname</div>
+                        <br />
+                        <br />
+                        <input type="submit" class="btn btn-block btn-success btn-xlarge" style="font-size: 24px;" value="OK">
+
+                        <div class="col-md-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        }
     </div>
 
     <button class="btn btn-block btn-lg btn-default" onclick="goBack()" style="width:180px; height:50px; position: absolute;left:10px;bottom:10px;">

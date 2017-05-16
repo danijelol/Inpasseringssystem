@@ -18,9 +18,11 @@
     <script src="~/Scripts/jquery-3.1.1.js"></script>
 
     <div class="container">
-        <div class="row" style="height:292px; text-align: center"><font size="38" class="bg-success"><br /><br />Inpassering registrerad!</font></div>
-
-
+        <div class="row" style="height:292px; text-align: center;">
+            <div style="margin-top:150px;">
+                <font size="38" class="bg-success" style="padding: 10px 20px;">Inpassering registrerad!</font>
+            </div>
+        </div>
 
         @using (Html.BeginForm("Index", "Index"))
         {
@@ -37,8 +39,6 @@
                         <h1>@ViewBag.Visiting har blivit meddelad om din ankomst.</h1>
                         <br /><h2>Sätt dig ner i soffan och ta det lugnt så möter vi dig alldeles strax.</h2>
                     }
-
-
 
                 </div>
             </div>
