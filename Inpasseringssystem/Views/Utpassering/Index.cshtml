@@ -23,10 +23,7 @@
     </script>
 
     <div class="container">
-        <div class="row" style="height:292px; text-align: center"><font size="38"><br /><br />Hej! <br />För utpassering ange ditt namn.</font></div>
-
-
-
+        <div class="row" style="height:292px; text-align: center; margin-top: 80px;"><font size="38"><br /><br />Hej! För utpassering ange ditt namn.</font></div>
 
 @using (Html.BeginForm("Complete", "Utpassering"))
 {
@@ -34,8 +31,7 @@
 
             <div class="col-md-4"></div>
             <div class="col-md-4 text-center" style="text-align: center">
-                <br />
-
+                
                 <div class="col-md-12 text-left">
                     <h1>Förnamn</h1>
                     @Html.TextBoxFor(model => model.Name, new { @class = "form-control input-lg", @style = "font-size: 27px" })

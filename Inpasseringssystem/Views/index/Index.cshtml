@@ -25,6 +25,7 @@
     <div class="container">
         <div class="row">
             <br />
+            <br />
 
         </div>
 
@@ -38,13 +39,13 @@
 
         <div class="row" style="padding-bottom:15px">
             <div class="col-md-2"></div>
-            <div class="col-md-4">
+            <div class="col-md-4" style="margin-right: 20px;">
                 @using (Html.BeginForm("Index", "Inpassering"))
                 {
                     <button type="submit" class="btn btn-block btn-success btn-start glyphicon glyphicon-play"> Inpassering</button>
                 }
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" style="margin-left: 20px;">
                 @using (Html.BeginForm("Index", "Utpassering"))
                 {
                     <button type="submit" class="btn btn-block btn-warning btn-start glyphicon glyphicon-stop"> Utpassering</button>
@@ -63,7 +64,7 @@
     </div>
     <br /><br /><br /><br /><br /><br /><br />
 
-    <img style="width:100%" src="~/pictures/footer.png" />
+    <img style="width:100%; position: absolute;left:0px;bottom:0px;" src="~/pictures/footer.png" />
 
 </body>
 
