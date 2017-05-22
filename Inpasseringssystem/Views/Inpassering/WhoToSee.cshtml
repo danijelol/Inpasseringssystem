@@ -135,8 +135,13 @@
                         .appendTo(ul);
                 }
 
+            $("#searchclear").click(function () {
+                $("#tags").val('');
+            });
 
         });
+
+
 
         function goBack() {
             window.history.back();
