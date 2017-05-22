@@ -152,7 +152,10 @@
                 <br />
                 <br />
                 <br />
-                <input type="submit" class="btn btn-block btn-danger btn-lg" value="Avsluta">
+                @using (Html.BeginForm("Index", "Admin"))
+                {
+                    <input type="submit" class="btn btn-block btn-danger btn-lg" value="Avsluta">
+                }
             </div>
             <div class="col-md-4"></div>
         </div>
